@@ -2,6 +2,11 @@ module github.com/crossplaneio/stack-azure
 
 go 1.12
 
+replace (
+	github.com/crossplaneio/crossplane => github.com/negz/crossplane v0.1.1-0.20191023002453-b6b2b208953c
+	github.com/crossplaneio/crossplane-runtime => github.com/negz/crossplane-runtime v0.0.0-20191023001321-a81fb19350e0
+)
+
 require (
 	github.com/Azure/azure-pipeline-go v0.2.2 // indirect
 	github.com/Azure/azure-sdk-for-go v32.5.0+incompatible
@@ -12,14 +17,12 @@ require (
 	github.com/Azure/go-autorest/autorest/date v0.2.0
 	github.com/Azure/go-autorest/autorest/to v0.3.0
 	github.com/Azure/go-autorest/autorest/validation v0.2.0 // indirect
-	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
-	github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4 // indirect
 	github.com/crossplaneio/crossplane v0.3.0
-	github.com/crossplaneio/crossplane-runtime v0.0.0-20191016194050-7384779dc024
+	github.com/crossplaneio/crossplane-runtime v0.0.0-20191022001740-a56c70ba6270
 	github.com/google/go-cmp v0.3.0
 	github.com/google/uuid v1.1.1
 	github.com/mattn/go-ieproxy v0.0.0-20190805055040-f9202b1cfdeb // indirect
-	github.com/onsi/ginkgo v1.9.0 // indirect
+	github.com/negz/crossplane v0.1.0
 	github.com/onsi/gomega v1.5.0
 	github.com/pkg/errors v0.8.1
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
